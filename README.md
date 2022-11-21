@@ -331,7 +331,7 @@ mvnw.cmd spring-boot:run    # en MS Windows
 ```
    - Detalles en https://spring.io/projects/spring-data-rest
 
-2. Ejecutar de nuevo el proyecto (con `mvn spring-data:run`) y acceder con un navegador a las siguientes URLs:
+2. Ejecutar de nuevo el proyecto (con `mvn spring-boot:run`) y acceder con un navegador a las siguientes URLs:
    - http://localhos:8080
    - http://localhos:8080/clientes
    - http://localhos:8080/articuloes
@@ -356,4 +356,4 @@ mvnw.cmd spring-boot:run    # en MS Windows
 ```
    - Detalles en https://springdoc.org/
 
-2. Ejecutar de nuevo el proyecto (con `mvn spring-data:run`) y acceder con un navegador a la URL http://localhost:8080/swagger-ui.html
+2. Ejecutar de nuevo el proyecto (con `mvn spring-boot:run`) y acceder con un navegador a la URL http://localhost:8080/swagger-ui.html
