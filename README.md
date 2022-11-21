@@ -317,3 +317,43 @@ mvnw.cmd spring-boot:run    # en MS Windows
 ```
 
  
+
+## EXTRA: Pruebas adicionales (adelento de REST en Spring)
+
+### Spring Data REST (generador de APIs REST para _repositorios_ Spring DATA)
+
+1. Añadir la siguiente dependencia en el `pom.xml` (activa el _starter_ de Spring Data REST)
+```xml
+   <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-data-rest</artifactId>
+   </dependency>
+```
+   - Detalles en https://spring.io/projects/spring-data-rest
+
+2. Ejecutar de nuevo el proyecto (con `mvn spring-data:run`) y acceder con un navegador a las siguientes URLs:
+   - http://localhos:8080
+   - http://localhos:8080/clientes
+   - http://localhos:8080/articuloes
+   - http://localhos:8080/pedidoes
+   - etc
+
+### SpringDoc OpenAPI (generador de documentación on-line OpenAPI/Swagger) [no es parte de Spring]
+
+1. Añadir las siguientes dependencias en el `pom-xml` (activa el proyecto `springdoc-openapi`)
+```xml
+   <dependency>
+      <groupId>org.springdoc</groupId>
+      <artifactId>springdoc-openapi-data-rest</artifactId>
+      <version>1.6.13</version>
+   </dependency>
+
+   <dependency>
+      <groupId>org.springdoc</groupId>
+      <artifactId>springdoc-openapi-ui</artifactId>
+      <version>1.6.13</version>
+   </dependency>
+```
+   - Detalles en https://springdoc.org/
+
+2. Ejecutar de nuevo el proyecto (con `mvn spring-data:run`) y acceder con un navegador a la URL http://localhost:8080/swagger-ui.html
