@@ -121,9 +121,9 @@ El fichero `pom.xml` resultante:
 - declara la dependencias necesarias, incluido el _starter_ `spring-boot-starter-data-jpa` que habilita Spring DATA JPA.
 - declara el _plugin_ `spring-boot-maven-plugin` que se encarga del empaquetado y ejecución de proyectos Spring Boot.
 
-Clase de configuración resultante (en `src/main/java/es/uvigo/mei/pedidos/PedidosSpringApplication`)
+Clase de configuración resultante (en `src/main/java/es/uvigo/dagss/pedidos/PedidosSpringApplication`)
 ```java
-package es.uvigo.mei.pedidos;
+package es.uvigo.dagss.pedidos;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -235,7 +235,7 @@ spring.jpa.hibernate.naming.physical-strategy=org.hibernate.boot.model.naming.Ph
 ```
 
 
-### Crear 'main()' de prueba [Modificar `PedidosSpringApplication` en paquete `es.uvigo.mei.pedidos`] 
+### Crear 'main()' de prueba [Modificar `PedidosSpringApplication` en paquete `es.uvigo.dagss.pedidos`] 
 
 ```sh
 cd src/main/java/es/uvigo/dagss/pedidos
@@ -247,7 +247,7 @@ pushd
 
 El nuevo contenido será:
 ```java
-package es.uvigo.mei.pedidos;
+package es.uvigo.dagss.pedidos;
 ...
 
 @SpringBootApplication
